@@ -4,6 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <style>
+        .form-container{
+               background-color: antiquewhite;
+               border: 1px solid red;
+               border-radius: 10px;
+               box-shadow: 0 0 10px blueviolet;
+               padding: 30px;
+               width: 400px;
+               margin: 100px auto;
+               text-align: center;
+           }
+   
+       body{
+           font-family: Arial, Helvetica, sans-serif;
+       }	
+   </style>
+
     <script>
 
      function Login() {
@@ -20,24 +37,24 @@
     </script>
 </head>
 <body>
+    <div class="form-container">
+        <h1>Login Akun</h1>
 
-    <h1>Login Akun</h1>
+        <form id="login">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
 
-    <form id="login">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
+            <br>
+            <br>
 
-        <br>
-        <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+            <br>
+            <br>
 
-        <br>
-        <br>
-
-        <button type="button" onclick="Login()">Login</button>
-    </form>
-
+            <button type="button" onclick="Login()">Login</button>
+        </form>
+    </div>
 </body>
 </html>
